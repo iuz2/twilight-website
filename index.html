@@ -1,19 +1,89 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tebak Angka Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TWILIGHT Software</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #1e2a38;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #1e88e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background: #1e88e5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>TWILIGHT Software</h1>
+    <p>Murah, Mudah, Cepat, Profesional</p>
+  </header>
+
   <div class="container">
-    <h1>Tebak Angka Game</h1>
-    <p>Saya memikirkan angka antara 1 dan 100. Coba tebak!</p>
-    <input type="number" id="guessInput" placeholder="Masukkan tebakan Anda">
-    <button onclick="checkGuess()">Tebak</button>
-    <p id="message"></p>
+    <div class="card">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah penyedia jasa pembuatan aplikasi Android yang fokus pada kualitas dan kecepatan. TWILIGHT Software hadir untuk membantu UMKM, bisnis lokal, dan individu mengembangkan aplikasi mereka dengan mudah dan terjangkau.</p>
+      <p><strong>Alamat Kantor:</strong> Jl. Banyu 134G, Karanggayam, Depok, Sleman, DIY</p>
+    </div>
+
+    <div class="card">
+      <h2>Order Aplikasi</h2>
+      <form action="https://formspree.io/f/mgegvqvz" method="POST">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" placeholder="Detail permintaan aplikasi..." required></textarea>
+        <button type="submit">Kirim Order</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Hubungi Kami</h2>
+      <a class="btn" href="https://wa.me/6281234567890" target="_blank">Chat WhatsApp</a>
+    </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
